@@ -1,0 +1,29 @@
+.card{
+    border: 1px solid black;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.card > .card-heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card > .card-heading > p{
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.more-info{
+    padding: 8px 0px;
+}
+
+.btn-select{
+    background-color: #D9D9D9;
+    font-weight: 400;
+    align-self: right;
+    padding: 5px;
+    min-width: 90px;
+}
