@@ -1,6 +1,7 @@
 import requests
+import geoiff
 
-GOOGLE_KEY = 'AIzaSyA9gmgZyfPk_axoIBafWssnWG3quLVahoY'
+GOOGLE_KEY = "AIzaSyA9gmgZyfPk_axoIBafWssnWG3quLVahoY"
 
 address = input("enter address: ")
 
@@ -17,10 +18,10 @@ longitude = data["results"][0]["geometry"]["location"]["lng"]
 
 print(f"Latitude: {latitude}, Longitude: {longitude}")
 
-response = requests.get(f"https://solar.googleapis.com/v1/buildingInsights:findClosest?location.latitude=37.4450&location.longitude=-122.1390&requiredQuality=HIGH&key={GOOGLE_KEY}")
+response = requests.get(f"https://solar.googleapis.com/v1/buildingInsights:findClosest?location.latitude={latitude}&location.longitude={longitude}&requiredQuality=HIGH&key={GOOGLE_KEY}")
 data = response.json()
 
-print('\nYearly Energy DC in Kwh:')
+print('\nYearly Energy DC in K102 Country Club Rd, Chapel Hill, NC, USAwh:')
 print(data["solarPotential"]['solarPanelConfigs'][1]['yearlyEnergyDcKwh'])
 print('\n')
 
@@ -30,3 +31,6 @@ groundArea_wholeroofstats = int(data['solarPotential']['wholeRoofStats']['ground
 maxArrayArea = int(data['solarPotential']['maxArrayAreaMeters2'])
 
 wholeBuildingRoofArea = area_wholeroofstats * (groundArea_buildingStats/groundArea_wholeroofstats)
+
+geoiff.display_image(f'https://solar.googleapis.com/v1/dataLayers:get?location.latitude={latitude}&location.longitude={longitude}&radiusMeters=100&view=FULL_LAYERS&requiredQuality=HIGH&exactQualityRequired=true&pixelSizeMeters=0.5&key={GOOGLE_KEY}', key=GOOGLE_KEY)
+
