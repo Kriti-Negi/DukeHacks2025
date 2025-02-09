@@ -1,7 +1,7 @@
 import requests
 import geoiff
 
-GOOGLE_KEY = "AIzaSyA9gmgZyfPk_axoIBafWssnWG3quLVahoY"
+GOOGLE_KEY = key
 
 address = input("enter address: ")
 
