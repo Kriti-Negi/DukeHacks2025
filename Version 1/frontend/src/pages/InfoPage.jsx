@@ -6,7 +6,6 @@ import Chart from "../components/Chart";
 import { useLocation } from "react-router";
 
 import { useEffect, useState } from "react";
-//AIzaSyCLHNFewVkVLoUAG6eFTpgUmv_s9_vvgb4
 
 export default function InfoPage(props){
 
@@ -103,7 +102,7 @@ export default function InfoPage(props){
                             loading="lazy"
                             allowfullscreen
                             referrerpolicy="no-referrer-when-downgrade"
-                            src={"https://www.google.com/maps/embed/v1/place?key=AIzaSyCLHNFewVkVLoUAG6eFTpgUmv_s9_vvgb4&zoom=33&q=" + infoId}>
+                            src={"https://www.google.com/maps/embed/v1/place?key=key&zoom=33&q=" + infoId}>
                         </iframe>
                     </div>
 
