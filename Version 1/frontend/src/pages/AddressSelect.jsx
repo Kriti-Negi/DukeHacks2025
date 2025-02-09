@@ -54,7 +54,7 @@ export default function AddressSelect(props){
                 zoom="3"
                 allowfullscreen
                 referrerpolicy="no-referrer-when-downgrade"
-                src={"https://www.google.com/maps/embed/v1/place?key=AIzaSyCLHNFewVkVLoUAG6eFTpgUmv_s9_vvgb4&zoom=33&q=" + setAdd}>
+                src={"https://www.google.com/maps/embed/v1/place?key=key&zoom=33&q=" + setAdd}>
             </iframe>
 
             <Link
