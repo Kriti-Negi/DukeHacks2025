@@ -1,6 +1,6 @@
 import requests
 
-
+GOOGLE_KEY = 'AIzaSyA9gmgZyfPk_axoIBafWssnWG3quLVahoY'
 
 address = input("enter address: ")
 
