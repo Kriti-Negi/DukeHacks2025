@@ -158,7 +158,7 @@ def test():
 
     roofLevel = int(request.args.get("roofLevel"))
 
-    GOOGLE_KEY = 'AIzaSyA9gmgZyfPk_axoIBafWssnWG3quLVahoY'
+    GOOGLE_KEY = key
 
     response = requests.get(f"https://maps.googleapis.com/maps/api/geocode/json?address={address}&key={GOOGLE_KEY}")
 
@@ -226,7 +226,7 @@ def test():
 @app.route("/giveImage")
 def get_image():
 
-    GOOGLE_KEY = 'AIzaSyA9gmgZyfPk_axoIBafWssnWG3quLVahoY'
+    GOOGLE_KEY = key
 
     address = request.args.get("address")
 
