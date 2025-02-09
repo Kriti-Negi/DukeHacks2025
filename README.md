@@ -129,9 +129,4 @@ With SunlightSavings, users can **maximize their savings, reduce their carbon fo
 
 ---
 
-## 📜 License
-**MIT License** – Free to use, modify, and improve!  
-
----
-
 ### **🌞 SunlightSavings: Smart, Data-Driven Solar Planning!**
