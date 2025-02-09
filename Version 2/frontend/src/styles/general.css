@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    background-color: #FFFFFF;
+}
+
+.form{
+    display: flex;
+    align-items: center;
+}
+
+.input-set {
+    margin: 20px;
+    margin-right: 20px;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 8px;
+    color: #2A2A2A;
+    outline: #64FF58;
+    border: 0;
+    border: 1px solid #64FF58;
+    min-width: 300px;
+}
+
+.navbar{
+    background-color: #FFFFFF;
+    padding: 20px;
+    color: #2A2A2A;
+    border-bottom-style: solid;
+    border-color: #64FF58;
+}
+
+.navbar > h3{
+    font-size: 1.2rem;
+}
+
+.btn{
+    padding: 12px;
+    border-radius: 8px;
+    background-color:#64FF58;
+    border: 0;
+}
+
+.btn-next{
+    margin-left: 30px;
+    min-width: 100px;
+    margin-top: 10px;
+}
+

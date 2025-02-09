@@ -1,0 +1,82 @@
+h3{
+    font-size: 1.3rem;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.left{
+    padding: 0px 30px;
+}
+
+.map-container{
+    padding: 20px 0px;
+}
+
+.right{
+    padding: 25px 10px;
+}
+
+.right > input{
+    margin: 18px 0px;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 8px;
+    color: #2A2A2A;
+    outline: #64FF58;
+    border: 0;
+    border: 1px solid #64FF58;
+    min-width: 300px;
+}
+
+.dropdown > label{
+    font-weight: 400;
+}
+
+.dropdown > select {
+    margin-left: 20px;
+    padding: 12px;
+    border-radius: 8px;
+    border-color: #64FF58;
+}
+
+.right > .btn-calc {
+    padding: 12px;
+    border-radius: 8px;
+    background-color:#64FF58;
+    border: 0;
+    margin-top: 12px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+.eco-facts > .eco-fact{
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.eco-facts > .eco-fact > img{
+    height: 40px;
+}
+
+.eco-facts > .eco-fact > p{
+    font-size: 1rem;
+    margin: 10px 0px;
+    margin-left: 15px;
+}
+
+.infoOutput{
+    padding-bottom: 20px;
+}
+
+.slider{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.solarMapStyles{
+    max-width: 100%;
+}
