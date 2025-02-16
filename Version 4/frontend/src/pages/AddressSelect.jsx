@@ -5,7 +5,7 @@ import { Link } from "react-router";
 
 export default function AddressSelect(props){
 
-    //AIzaSyAnPDXizb6BbI0QORyg8pUk9mXkPasTzZI
+
 
     const [setAdd, setSetAdd] = useState("UNC Chapel Hill");
     const [address, setAddress] = useState("");
